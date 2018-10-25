@@ -6,6 +6,7 @@ const Routes = () => (
     <div>
         <Route exact path="/" component={Screens.Home} />
         <Route exact path="/lesson/:id" component={Screens.Lesson} />
+        <Route exact path="/review/lesson/:id" component={Screens.Lesson} />
     </div>
 );
 

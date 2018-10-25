@@ -41,7 +41,7 @@ class Home extends Component {
                             Word of the Day
                              </Typography>
                         <Typography variant="h5" component="h2">
-                            olivier-french-learn
+                            Olivier French Learn
                              </Typography>
                         <Typography className='pos' color="textSecondary">
                             adjective

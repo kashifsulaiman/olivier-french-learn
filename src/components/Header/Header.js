@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Divider from '@material-ui/core/Divider';
 import { withRouter } from "react-router-dom";
+import LESSON_DATA  from '../../constant/Lesson_data';
 
 class Header extends Component {
     constructor() {
@@ -41,10 +42,9 @@ class Header extends Component {
                     <List style={{ width: 250 }} component="nav">
                         <ListItem>Lessons</ListItem>
                         <Divider />
-                        <ListItem onClick={this.changeLesson.bind(this,0)} button>Lesson 1</ListItem>
-                        <ListItem onClick={this.changeLesson.bind(this,1)} button>Lesson 2</ListItem>
-                        <ListItem onClick={this.changeLesson.bind(this,2)} button>Lesson 3</ListItem>
-                        <ListItem onClick={this.changeLesson.bind(this,3)} button>Lesson 4</ListItem>
+                        {LESSON_DATA.map((lesson, index) => {
+                            return <ListItem onClick={this.changeLesson.bind(this, index)} button>Lesson {lesson.id}</ListItem>
+                        })}
                     </List>
                 </Drawer>
             </div>

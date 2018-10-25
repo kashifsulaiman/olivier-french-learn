@@ -1,7 +1,8 @@
 const LESSON_DATA = [
     {
-        'id': 1,
-        'lesson': 'Lesson 1',
+        id: 1,
+        lesson: 'Lesson 1',
+        groupId: 1,
         pages: [
             {
                 id: 1,
@@ -30,7 +31,7 @@ const LESSON_DATA = [
                         <audio controls>
                             <source src="../../assets/audio/son/phraseQuiChanteFr.mp3" type="audio/mpeg">
                             Your browser does not support the audio element.
-                        </audio>
+                        </audio><br />
                         <img src="../../assets/images/placeholder.jpg" width="300px" />
                     </div>
                 `,
@@ -42,7 +43,7 @@ const LESSON_DATA = [
                         <audio controls>
                             <source src="../../assets/audio/son/phraseQuiChanteFr.mp3" type="audio/mpeg">
                             Your browser does not support the audio element.
-                        </audio>
+                        </audio><br />
                         <img src="../../assets/images/placeholder.jpg" width="300px" />
                     </div>   
                 `,
@@ -97,34 +98,34 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/se.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>ou le son r</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/ke.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>et son nom est</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/ses.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                         </div>
                         <div>
                             <p>De plus une association de lettres symbolise un son qui n'a rien à voir avec le son que forme chaque lettre individuellement. Par exemple la lettre A fait le son</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>la lettre U fait le son</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>alors que l'association AU, fait le son</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                         </div>
                     </div>
                 `,
@@ -137,34 +138,34 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/se.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>ou le son r</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/ke.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>et son nom est</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/ses.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                         </div>
                         <div>
                             <p>The association of letters symbolise a sound that as nothing to do... For exemple the letter A made the sound</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>the letter U made the sound</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>but the association of AU made the sound</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                         </div>
                     </div>
                 `
@@ -180,27 +181,27 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/e.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/i.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>sont prononçables seuls, avec eux on a de la voix.</p>
                         </div>
                     </div>
@@ -214,27 +215,27 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/e.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/i.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>,</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>can be said alone. with them we have voice.</p>
                         </div>
                     </div>
@@ -243,8 +244,9 @@ const LESSON_DATA = [
         ]
     },
     {
-        'id': 2,
-        'lesson': 'Lesson 2',
+        id: 2,
+        lesson: 'Lesson 2',
+        groupId: 1,
         pages: [
             {
                 id: 1,
@@ -256,32 +258,32 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <audio controls>
                                 <source src="" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <audio controls>
                                 <source src="" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <audio controls>
                                 <source src="" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <audio controls>
                                 <source src="../../assets/audio/son/tu.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>, seul elle ne sonne pas. C'est pourquoi la consonne à la fin d'un mot ne se prononce pas</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/souris.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <audio controls>
                                 <source src="../../assets/audio/son/elephant.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>mais encore un fois ne vous préoccupez pas de tout cela car nous allons voir toutes ces choses graduellement dans ce course. Vous devez simplement le garder en en tête.</p>
                         </div>
                     </div>
@@ -294,11 +296,11 @@ const LESSON_DATA = [
                         <audio controls>
                             <source src="../../assets/audio/son/souris.mp3" type="audio/mpeg">
                             Your browser does not support the audio element.
-                        </audio>
+                        </audio><br />
                         <audio controls>
                             <source src="../../assets/audio/son/elephant.mp3" type="audio/mpeg">
                             Your browser does not support the audio element.
-                        </audio>
+                        </audio><br />
                         <p>mais encore un fois ne vous préoccupez pas de tout cela car nous allons voir toutes ces choses graduellement dans ce course. Vous devez simplement le garder en en tête.</p>
                     </div>
                 </div>
@@ -318,40 +320,40 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>et</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>comme si le groupe de lettre ne faisait qu'un seul son qui se dit en un seul soufle. Le mot TATA doit être lu</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/ta_ta.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>et on ne chante pas. On essaye pas d'accentuer les sons même si votre oreille entend un quelque chose qui ressemble à une accentuation. Il vous faut lire syllabe après syllabe et ne pas chercher à faire autre chose. En français il n'y a pas de</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/aaa.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>ou de</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/ouwa.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <div>
                                 <audio controls>
                                     <source src="../../assets/audio/son/ba.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <audio controls>
                                     <source src="../../assets/audio/son/la.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <audio controls>
                                     <source src="../../assets/audio/son/de.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                             </div>
                         </div>
                     </div>
@@ -368,17 +370,17 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>and</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>as the group of letters made only one sound and it is saied in one breath. The word TATA have to be read</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/ta_ta.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>and we must not sing.</p>
                         </div>
                     </div>
@@ -395,26 +397,26 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/english/two.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>se lit presque en un seul soufle, un seul son. Alors que le mot</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/english/quiet.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>il y a 3 syllabes</p>
                             <div>
                                 <audio controls>
                                     <source src="../../assets/audio/son/koi.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <audio controls>
                                     <source src="../../assets/audio/son/i.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <audio controls>
                                     <source src="../../assets/audio/son/ete.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                             </div>
                         </div>
                         <div>
@@ -424,14 +426,14 @@ const LESSON_DATA = [
                                 <audio controls>
                                     <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <p>un chien.</p>
                             </div>
                             <p>Si le mot commence par une voyelle elle se dit seule comme dans</p>
                             <audio controls>
                                 <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>range.</p>
                         </div>
                         <div>
@@ -440,20 +442,20 @@ const LESSON_DATA = [
                                 <audio controls>
                                     <source src="../../assets/audio/son/patate.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <div>
                                     <audio controls>
                                         <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                     <audio controls>
                                         <source src="../../assets/audio/son/ta.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                     <audio controls>
                                         <source src="../../assets/audio/son/te.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                 </div>
                             </div>
                         </div>
@@ -463,17 +465,17 @@ const LESSON_DATA = [
                                 <audio controls>
                                     <source src="../../assets/audio/son/comme.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <p>. On le lit</p>
                                 <div>
                                     <audio controls>
                                         <source src="../../assets/audio/son/co.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                     <audio controls>
                                         <source src="../../assets/audio/son/me.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                 </div>
                             </div>
                             <p>ou le mot</p>
@@ -481,7 +483,7 @@ const LESSON_DATA = [
                                 <audio controls>
                                     <source src="../../assets/audio/son/commerce.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                             </div>
                         </div>
                     </div>
@@ -498,14 +500,14 @@ const LESSON_DATA = [
                             <audio controls>
                                 <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio><br />
                             <p>range</p>
                             <div>
                                 <p>li</p>
                                 <audio controls>
                                     <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <p>un chien.</p>
                             </div>
                             <p>, if the word start with a vowel it is said alone as in</p>
@@ -519,36 +521,36 @@ const LESSON_DATA = [
                                 <audio controls>
                                     <source src="../../assets/audio/son/comme.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <div>
                                     <audio controls>
                                         <source src="../../assets/audio/son/co.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                     <audio controls>
                                         <source src="../../assets/audio/son/me.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                 </div>
                             </div>
                             <div>
                                 <audio controls>
                                     <source src="../../assets/audio/son/commerce.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
-                                </audio>
+                                </audio><br />
                                 <div>
                                     <audio controls>
                                         <source src="../../assets/audio/son/co.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                     <audio controls>
                                         <source src="../../assets/audio/son/mer.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                     <audio controls>
                                         <source src="../../assets/audio/son/ce.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
-                                    </audio>
+                                    </audio><br />
                                 </div>
                             </div>
                         </div>
@@ -560,40 +562,363 @@ const LESSON_DATA = [
     {
         'id': 3,
         'lesson': 'Lesson 3',
-        pages: []
+        groupId: 2,
+        pages: [
+            {
+                id: 1,
+                html: `
+                    <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something"> la lettre A </h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                    </div>
+                `,
+                foreignHtml: `
+                     <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something">letter A</h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                    </div>
+                `
+            },
+        ]
     },
     {
         'id': 4,
         'lesson': 'Lesson 4',
-        pages: []
+        groupId: 2,
+        pages: [
+            {
+                id: 1,
+                html: `
+                    <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something"> la lettre A </h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                    </div>
+                `,
+                foreignHtml: `
+                     <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something">letter A</h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                    </div>
+                `
+            },
+        ]
     },
     {
         'id': 5,
         'lesson': 'Lesson 5',
-        pages: []
+        groupId: 2,
+        pages: [
+            {
+                id: 1,
+                html: `
+                    <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something"> la lettre A </h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                    </div>
+                `,
+                foreignHtml: `
+                     <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something">letter A</h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                    </div>
+                `
+            },
+        ]
     },
     {
         'id': 6,
         'lesson': 'Lesson 6',
-        pages: []
+        groupId: 2,
+        pages: [
+            {
+                id: 1,
+                html: `
+                    <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something"> la lettre A </h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                    </div>
+                `,
+                foreignHtml: `
+                     <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something">letter A</h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                    </div>
+                `
+            },
+        ]
     },
     {
         'id': 7,
         'lesson': 'Lesson 7',
-        pages: []
+        groupId: 3,
+        pages: [
+            {
+                id: 1,
+                html: `
+                    <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something"> la lettre A </h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                    </div>
+                `,
+                foreignHtml: `
+                     <div>
+                        <h2>Page 1</h2>
+                        <h3 className="something">letter A</h3>
+                        <audio controls>
+                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <audio controls>
+                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio><br />
+                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                    </div>
+                `
+            },
+        ]
     },
-    {
-        'id': 8,
-        'lesson': 'Lesson 8'
-    },
-    {
-        'id': 9,
-        'lesson': 'Lesson 9'
-    },
-    {
-        'id': 10,
-        'lesson': 'Lesson 10'
-    }
 ]
 
 export default LESSON_DATA
