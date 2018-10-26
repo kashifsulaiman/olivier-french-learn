@@ -55,7 +55,13 @@ class Lesson extends Component {
                     foreignHtml: prevLesson.pages[pageNo].foreignHtml,
                     lessonNo: prevLessonNo
                 })
-                this.props.history.push(`/lesson/${prevLessonNo}`)
+                if(isReviewing) {
+                    if(LESSON_DATA[lessonNo].groupId == prevLesson.groupId) {
+                        this.props.history.push(`/review/lesson/${prevLessonNo}`)
+                    }
+                } else {
+                    this.props.history.push(`/lesson/${prevLessonNo}`)
+                }
             }
             return;
         }
