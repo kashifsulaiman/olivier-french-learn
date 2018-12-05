@@ -4,6 +4,25 @@ import Button from '@material-ui/core/Button';
 import LESSON_DATA from '../../constant/Lesson_data';
 import _ from 'underscore'
 import Snackbar from '@material-ui/core/Snackbar';
+import SwipeableViews from 'react-swipeable-views';
+
+const styles = {
+    slide: {
+        padding: 15,
+        minHeight: 100,
+        color: '#fff',
+    },
+    slide1: {
+        background: '#FEA900',
+    },
+    slide2: {
+        background: '#B3DC4A',
+    },
+    slide3: {
+        background: '#6AC0FF',
+    },
+};
+
 
 class Lesson extends Component {
     constructor(props) {
@@ -19,20 +38,49 @@ class Lesson extends Component {
             htmlToRendered: LESSON_DATA[lessonNo].pages[0].html,
             foreignHtml: LESSON_DATA[lessonNo].pages[0].foreignHtml,
             pageNo: 0,
+            currentIndex: 0,
             review: false,
         }
-
+        this.changePage = this.changePage.bind(this);
         this.startReviewing = this.startReviewing.bind(this);
         this.changeLanguage = this.changeLanguage.bind(this);
     }
 
+    componentDidMount(){
+
+    }
+
     changeLanguage() {
-        const { html, foreignHtml, showingFrench } = this.state
+        const { html, foreignHtml, showingFrench} = this.state
         if (showingFrench) {
-            this.setState({ htmlToRendered: foreignHtml, showingFrench: false })
+            this.setState({ htmlToRendered: foreignHtml, showingFrench: false }, () => {
+                const target = document.getElementsByClassName('element123');
+                if(target){
+                    console.log(target)
+                    for(let i = 0; i< target.length; i++){
+                        target[i].addEventListener('click', ()=>{
+                            var aAudio = new Audio(target[i].id);
+                            aAudio.play();
+                        })
+                    }
+
+                }
+            })
         }
         else {
-            this.setState({ htmlToRendered: html, showingFrench: true })
+            this.setState({ htmlToRendered: html, showingFrench: true }, () => {
+                const target = document.getElementsByClassName('element123');
+                if(target){
+                    console.log(target)
+                    for(let i = 0; i< target.length; i++){
+                        target[i].addEventListener('click', ()=>{
+                            var aAudio = new Audio(target[i].id);
+                            aAudio.play();
+                        })
+                    }
+
+                }
+            })
         }
     }
 
@@ -54,6 +102,18 @@ class Lesson extends Component {
                     htmlToRendered: prevLesson.pages[pageNo].html,
                     foreignHtml: prevLesson.pages[pageNo].foreignHtml,
                     lessonNo: prevLessonNo
+                },() => {
+                    const target = document.getElementsByClassName('element123');
+                    if(target){
+                        console.log(target)
+                        for(let i = 0; i< target.length; i++){
+                            target[i].addEventListener('click', ()=>{
+                                var aAudio = new Audio(target[i].id);
+                                aAudio.play();
+                            })
+                        }
+
+                    }
                 })
                 if(isReviewing) {
                     if(LESSON_DATA[lessonNo].groupId == prevLesson.groupId) {
@@ -75,6 +135,19 @@ class Lesson extends Component {
                 htmlToRendered: lesson.html,
                 foreignHtml: lesson.foreignHtml,
                 pageNo: newPageNo
+            },() => {
+                const target = document.getElementsByClassName('element123');
+                if(target){
+                    console.log(target)
+                    for(let i = 0; i< target.length; i++){
+                        target[i].addEventListener('click', ()=>{
+                            console.log(target[i].src,'imageeeeeeeeeeeeeee')
+                            var aAudio = new Audio(target[i].id);
+                            aAudio.play();
+                        })
+                    }
+
+                }
             })
         }
 
@@ -103,6 +176,18 @@ class Lesson extends Component {
                     htmlToRendered: LESSON_DATA[lessonNo].pages[0].html,
                     foreignHtml: LESSON_DATA[lessonNo].pages[0].foreignHtml,
                     pageNo: 0
+                },() => {
+                    const target = document.getElementsByClassName('element123');
+                    if(target){
+                        console.log(target)
+                        for(let i = 0; i< target.length; i++){
+                            target[i].addEventListener('click', ()=>{
+                                var aAudio = new Audio(target[i].id);
+                                aAudio.play();
+                            })
+                        }
+
+                    }
                 })
 
                 if(isReviewing) {
@@ -134,9 +219,8 @@ class Lesson extends Component {
     }
 
     render() {
-        const { currentLesson, htmlToRendered, review, reviewLessons, vertical, horizontal } = this.state;
+        const { currentLesson, htmlToRendered, review, reviewLessons, vertical, horizontal, currentIndex} = this.state;
         const isReviewing = this.props.match.path.includes('review');
-
         return (
             currentLesson &&
             <div>
@@ -153,13 +237,44 @@ class Lesson extends Component {
                         />
                         <div onDoubleClick={this.changeLanguage}>
                             <h1>Lesson No. {currentLesson.id}</h1>
-                            <div dangerouslySetInnerHTML={{ __html: htmlToRendered }} />
+                            <div style = {{flexDirection: 'row', marginTop: "20%", position: 'absolute', width: "100%"}}>
+                                <img src= {require('./../../assets/images/leftArrow.png')} onClick={() => this.changePage(false)}/>
+                                <img src= {require('./../../assets/images/rightArrow.png')} style= {{marginLeft: '90%'}} onClick={() => this.changePage(true)}/>
+                            </div>
+
+
+
+                            <SwipeableViews
+                                style = {{width: "80%", marginLeft: "10%"}}
+                                enableMouseEvents
+                                onSwitching={index => {
+                                    if(currentIndex + 1 == index){
+                                        this.changePage(true)
+                                        this.setState({currentIndex: index})
+                                    }
+                                    if(currentIndex - 1 == index){
+                                        this.changePage(false)
+                                        this.setState({currentIndex: index})
+                                    }
+                                  }}
+                            >
+                                {LESSON_DATA.map((lesson) => {
+                                    return(
+                                        lesson.pages.map((page) => {
+                                            return(
+                                                <div dangerouslySetInnerHTML={{ __html: htmlToRendered }} style = {{width: "80%", marginLeft: "10%"}}/>
+                                            )
+                                            console.log(page,'ooooooooooooooooooooooooooooooooooo')
+                                        })
+                                    )
+                                })}
+                            </SwipeableViews>
+
                             <br /><br /><br /><br />
+
                         </div>
-                        <div style={{position: 'fixed', bottom: 24, width: '100%', display: 'flex', justifyContent: 'space-around'}}>
-                            <Button variant="contained"  color="primary" onClick={this.changePage.bind(this, false)}>Back</Button>
-                            <Button variant="contained"  color="primary" onClick={this.changePage.bind(this, true)}>Next</Button>
-                        </div>
+
+
                     </div>}
             </div>
         );

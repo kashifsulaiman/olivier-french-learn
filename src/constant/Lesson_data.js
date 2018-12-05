@@ -1,3 +1,6 @@
+
+
+
 const LESSON_DATA = [
     {
         id: 1,
@@ -28,11 +31,9 @@ const LESSON_DATA = [
                         <h2>Page 2</h2>
                         <h3>Règles générales de la lecture du français</h3>
                         <p>La première grande règle: le français n'est pas une langue qui chante. Il n'y a pas d'accentuation comme dans d'autres langues comme l'anglais, l'arabe, le russe etc. Bien sûr il y a des nuances due à l'émotion mais nous ne parlons pas de ces accents mais bien des accents toniques qui font exploser ou atténuent grandement la prononciation d'une lettre ou d'un son dans le discourse normal. Il ne faut pas trop s'en inquiéter car nous allons voir que cela vient presque naturellement si l'on comprend comment se prononce le français. Ecoute la phrase suivante pour comparer l'intonation et le rythme</p>
-                        <audio controls>
-                            <source src="../../assets/audio/son/phraseQuiChanteFr.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <img src="../../assets/images/placeholder.jpg" width="300px" />
+                        <img src="../../assets/images/placeholder.jpg" width="300px" class="element123" id ="../../assets/audio/son/phraseQuiChanteFr.mp3"/>
+                        <br/>
+                        <!--<button class="element123" id ="phraseQuiChanteFr">Get Id</button>-->
                     </div>
                 `,
                 foreignHtml: `
@@ -40,12 +41,10 @@ const LESSON_DATA = [
                         <h2>Page 2</h2>
                         <h3>General rules to read french.</h3>
                         <p>the first importante rule: French is not ....</p>
-                        <audio controls>
-                            <source src="../../assets/audio/son/phraseQuiChanteFr.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <img src="../../assets/images/placeholder.jpg" width="300px" />
-                    </div>   
+                        <img src="../../assets/images/placeholder.jpg" width="300px" class="element123" id = "../../assets/audio/son/phraseQuiChanteFr.mp3"/>
+                        <br/>
+                        <!--<button class="element123" id ="phraseQuiChanteFr">Get Id</button>-->
+                    </div>
                 `,
             },
             {
@@ -57,7 +56,7 @@ const LESSON_DATA = [
                         <div>
                             <p>l'alphabet français comporte 26 lettres et 5 signes qui modifient le son que représente les lettres.</p>
                             <figure>
-                                <img src="../../assets/images/placeholder.jpg" width="300px" />
+                                <img src="../../assets/images/placeholder.jpg" width="300px"/>
                                 <figcaption>lettres de l'alphabet</figcaption>
                             </figure>                        
                         </div>
@@ -94,38 +93,43 @@ const LESSON_DATA = [
                         <h2>Page 4</h2>
                         <h3>Régles</h3>
                         <div>
-                            <p>Les lettres ont des noms qui peuvent être très différents des sons qu'elles représentent. Par exemple la lettre C peut faire le son</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/se.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>ou le son r</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/ke.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>et son nom est</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/ses.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p>
+                                Les lettres ont des noms qui peuvent être très différents des sons qu'elles représentent. Par exemple
+                            </p>
+
+                            <p style="display: inline;">la lettre C peut faire le son</p>
+                            <button class="element123" id = "../../assets/audio/son/se.mp3" type="audio/mpeg">[se]</button>
+                            <br/>
+                            <br/>
+
+                            <p style="display: inline;">ou le son r</p>
+                            <button class="element123" id = "../../assets/audio/son/ke.mp3" type="audio/mpeg">ke</button>
+                            <br/>
+                            <br/>
+
+                            <p style="display: inline;">et son nom est</p>
+                            <button class="element123" id = "../../assets/audio/son/ses.mp3" type="audio/mpeg">ses</button>
+                            <br/>
+                            <br/>
                         </div>
+
                         <div>
-                            <p>De plus une association de lettres symbolise un son qui n'a rien à voir avec le son que forme chaque lettre individuellement. Par exemple la lettre A fait le son</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>la lettre U fait le son</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>alors que l'association AU, fait le son</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">
+                                De plus une association de lettres symbolise un son qui n'a rien à voir avec le son que forme chaque lettre individuellement. Par exemple </p> <br /><br /> <p style="display: inline;"> la lettre A fait le son
+                            </p>
+                            <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                            <br/>
+                            <br/>
+
+                            <p style="display: inline;">la lettre U fait le son</p>
+                            <button class="element123" id = "../../assets/audio/son/u.mp3" type="audio/mpeg">u</button>
+                            <br/>
+                            <br/>
+
+                            <p style="display: inline;">alors que l'association AU, fait le son</p>
+                            <button class="element123" id = "../../assets/audio/son/o.mp3" type="audio/mpeg">o</button>
+                            <br/>
+                            <br/>
                         </div>
                     </div>
                 `,
@@ -134,38 +138,29 @@ const LESSON_DATA = [
                         <h2>Page 4</h2>
                         <h3>rules</h3>
                         <div>
-                            <p>Letters have name which can very different the sound they express</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/se.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>ou le son r</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/ke.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>et son nom est</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/ses.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">Letters have name which can very different the sound they express</p>
+                            <button class="element123" id = "../../assets/audio/son/se.mp3">se</button>
+                            <br/><br/>
+                            <p style="display: inline;">ou le son r</p>
+                            <button class="element123" id = "../../assets/audio/son/ke.mp3">ke</button>
+                            <br/><br/>
+                            <p style="display: inline;" >et son nom est</p>
+                            <button class="element123" id = "../../assets/audio/son/ses.mp3">ses</button>
+
                         </div>
                         <div>
-                            <p>The association of letters symbolise a sound that as nothing to do... For exemple the letter A made the sound</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>the letter U made the sound</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>but the association of AU made the sound</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p>The association of letters symbolise a sound that as nothing to do... For exemple </p>
+
+                            <p style="display: inline;">the letter A made the sound</p>
+                            <button  class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                            <br/><br/>
+                            <p style="display: inline;">the letter U made the sound</p>
+                            <button  class="element123" id = "../../assets/audio/son/u.mp3">u</button>
+                            <br/><br/>
+                            <p style="display: inline;">but the association of AU made the sound</p>
+                            <button class="element123" id = "../../assets/audio/son/o.mp3">o</button>
+
+
                         </div>
                     </div>
                 `
@@ -177,31 +172,24 @@ const LESSON_DATA = [
                         <h2>Page 5</h2>
                         <h3>Régles</h3>
                         <div>
-                            <p>Les voyelles: ce sont les lettres qui représente les sons que l'on peut vocaliser seuls. Les voyelles de bases A E I O U. Donc les sons</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/e.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/i.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p>
+                                Les voyelles: ce sont les lettres qui représente les sons que l'on peut vocaliser seuls. Les voyelles de bases A E I O U. Donc les sons
+                            </p>
+                            <button class="element123" id = "../../assets/audio/son/a.mp3">A</button>
+
+
+                            <button class="element123" id = "../../assets/audio/son/e.mp3">E</button>
+
+
+                            <button class="element123" id = "../../assets/audio/son/i.mp3">I</button>
+
+
+                            <button class="element123" id = "../../assets/audio/son/o.mp3">O</button>
+
+
+                            <button class="element123" id = "../../assets/audio/son/u.mp3">U</button>
+
+
                             <p>sont prononçables seuls, avec eux on a de la voix.</p>
                         </div>
                     </div>
@@ -211,31 +199,20 @@ const LESSON_DATA = [
                         <h2>Page 5</h2>
                         <h3>Rules</h3>
                         <div>
-                            <p>Voyelles: the letters that express the sound which can be vocalized alone?. the voyelles are A E I O U. Thus the sound</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/e.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/i.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>,</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/u.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p>
+                                Voyelles: the letters that express the sound which can be vocalized alone?. the voyelles are A E I O U. Thus the sound
+                            </p>
+
+                            <button class="element123" id = "../../assets/audio/son/a.mp3">A</button>
+
+                            <button class="element123" id = "../../assets/audio/son/e.mp3">E</button>
+
+                            <button class="element123" id = "../../assets/audio/son/i.mp3">I</button>
+
+                            <button class="element123" id = "../../assets/audio/son/o.mp3">O</button>
+
+                            <button class="element123" id = "../../assets/audio/son/u.mp3">U</button>
+
                             <p>can be said alone. with them we have voice.</p>
                         </div>
                     </div>
@@ -254,37 +231,16 @@ const LESSON_DATA = [
                     <div>
                         <h2>Page 1</h2>
                         <div>
-                            <p>les consonnes. Le mot consonne est fait de con: avec et sonne: sonner ce qui veut dire: qui sonne avec. Contrairement a certaine langue qui ont concerver une prononciation du type latin comme le russe l'anglais, l'allemand, le français lui n'a aucune struture d'origine latine dans sa prononciation. Les consonnes ne se vocalisent pas seul, il faut une voyelle après pour que la consonne sonne. La lettre T va selon la voyelle qui lui succède de prononcer</p>
-                            <audio controls>
-                                <source src="" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <audio controls>
-                                <source src="" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <audio controls>
-                                <source src="" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <audio controls>
-                                <source src="" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <audio controls>
-                                <source src="../../assets/audio/son/tu.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>, seul elle ne sonne pas. C'est pourquoi la consonne à la fin d'un mot ne se prononce pas</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/souris.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <audio controls>
-                                <source src="../../assets/audio/son/elephant.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
-                            <p>mais encore un fois ne vous préoccupez pas de tout cela car nous allons voir toutes ces choses graduellement dans ce course. Vous devez simplement le garder en en tête.</p>
+                            <p>
+                                les consonnes. Le mot consonne est fait de con: avec et sonne: sonner ce qui veut dire: qui sonne avec. Contrairement a certaine langue qui ont concerver une prononciation du type latin comme le russe l'anglais, l'allemand, le français lui n'a aucune struture d'origine latine dans sa prononciation. Les consonnes ne se vocalisent pas seul, il faut une voyelle après pour que la consonne sonne. La lettre T va selon la voyelle qui lui succède de prononcer
+                            </p>
+                            <button class="element123" id = "../../assets/audio/son/tu.mp3">tu</button>
+
+                            <p >, seul elle ne sonne pas. C'est pourquoi la consonne à la fin d'un mot ne se prononce pas</p>
+                            <button class="element123" id = "../../assets/audio/son/souris.mp3">souris</button>
+
+                            <p >mais encore un fois ne vous préoccupez pas de tout cela car nous allons voir toutes ces choses graduellement dans ce course. Vous devez simplement le garder en en tête.</p>
+                            <button  class="element123" id = "../../assets/audio/son/elephant.mp3">elephant</button>
                         </div>
                     </div>
                 `,
@@ -293,15 +249,10 @@ const LESSON_DATA = [
                     <h2>Page 1</h2>
                     <div>
                         <p>consonne:the word consonne is made with con (with) and with sonne (ring)</p>
-                        <audio controls>
-                            <source src="../../assets/audio/son/souris.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/elephant.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <button class="element123" id = "../../assets/audio/son/souris.mp3">souris</button>
+
                         <p>mais encore un fois ne vous préoccupez pas de tout cela car nous allons voir toutes ces choses graduellement dans ce course. Vous devez simplement le garder en en tête.</p>
+                        <button class="element123" id = "../../assets/audio/son/elephant.mp3">elephant</button>
                     </div>
                 </div>
                 `
@@ -317,43 +268,35 @@ const LESSON_DATA = [
                         </div>
                         <div>
                             <p>prenons des mots papa qui doit être lu</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+
+
+                            <button  class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
                             <p>et</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+
+
+                            <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
+
                             <p>comme si le groupe de lettre ne faisait qu'un seul son qui se dit en un seul soufle. Le mot TATA doit être lu</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/ta_ta.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+
+
+                            <button  class="element123" id = "../../assets/audio/son/ta_ta.mp3">ta ta</button>
+
                             <p>et on ne chante pas. On essaye pas d'accentuer les sons même si votre oreille entend un quelque chose qui ressemble à une accentuation. Il vous faut lire syllabe après syllabe et ne pas chercher à faire autre chose. En français il n'y a pas de</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/aaa.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+
+                            <p style="display: inline;">aaa</p>
+                            <button class="element123" id = "../../assets/audio/son/aaa.mp3">aaa</button>
+
                             <p>ou de</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/ouwa.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">ououwa</p>
+                            <button class="element123" id = "../../assets/audio/son/ouwa.mp3">ououwa</button>
+
                             <div>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/ba.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
-                                <audio controls>
-                                    <source src="../../assets/audio/son/la.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
-                                <audio controls>
-                                    <source src="../../assets/audio/son/de.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                                <p style="display: inline;">ba</p>
+                                <button  class="element123" id = "../../assets/audio/son/ba.mp3"></button>
+                                <p style="display: inline;">la</p>
+                                <button class="element123" id = "../../assets/audio/son/la.mp3"></button>
+                                <p style="display: inline;">de</p>
+                                <button class="element123" id = "../../assets/audio/son/de.mp3"></button>
                             </div>
                         </div>
                     </div>
@@ -367,20 +310,16 @@ const LESSON_DATA = [
                         </div>
                         <div>
                             <p>Lets take the word papa that must be read</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">pa</p>
+                            <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
+
                             <p>and</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">pa</p>
+                            <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
+
                             <p>as the group of letters made only one sound and it is saied in one breath. The word TATA have to be read</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/ta_ta.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">ta ta</p>
+                            <button class="element123" id = "../../assets/audio/son/ta_ta.mp3">ta ta</button>
                             <p>and we must not sing.</p>
                         </div>
                     </div>
@@ -394,96 +333,79 @@ const LESSON_DATA = [
                         <h3>Régles</h3>
                         <div>
                             <p>la syllabe: une syllabe est un son identifiable qui se dit en un soufle en un seul son sans nuance. Par exemple en anglais le mot</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/english/two.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">two</p>
+                            <button class="element123" id = "../../assets/audio/son/english/two.mp3">two</button>
+
                             <p>se lit presque en un seul soufle, un seul son. Alors que le mot</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/english/quiet.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">quiet</p>
+                            <button class="element123" id = "../../assets/audio/son/english/quiet.mp3">quiet</button>
+
                             <p>il y a 3 syllabes</p>
                             <div>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/koi.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
-                                <audio controls>
-                                    <source src="../../assets/audio/son/i.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
-                                <audio controls>
-                                    <source src="../../assets/audio/son/ete.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                               <p style="display: inline;">qui</p>
+                               <button  class="element123" id = "../../assets/audio/son/koi.mp3">qui</button>
+
+                               <p style="display: inline;">i</p>
+                               <button class="element123" id = "../../assets/audio/son/i.mp3">i</button>
+
+                               <p style="display: inline;">ete</p>
+                               <button class="element123" id = "../../assets/audio/son/ete.mp3">ete</button>
                             </div>
                         </div>
                         <div>
                             <p>Pour lire et dire correctement le français il faut identifier les syllabes et voici comment les reconnaître. Les voyelles sont toujours prononçable et peuvent former un syllabe à elle seule. le verbe avoir dans,</p>
                             <div>
                                 <p>il</p>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                                <p style="display: inline;">a</p>
+                                <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+
                                 <p>un chien.</p>
                             </div>
                             <p>Si le mot commence par une voyelle elle se dit seule comme dans</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">o</p>
+                            <button class="element123" id = "../../assets/audio/son/o.mp3">o</button>
+
                             <p>range.</p>
                         </div>
                         <div>
                             <p>La consonne ne peut être lue qu'avec une voyelle et chaque consonne ne peut être lue qu'avec une voyelle qui la succède. par exemple</p>
                             <div>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/patate.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                            <p style="display: inline;">patate</p>
+                            <button class="element123" id = "../../assets/audio/son/patate.mp3"></button>
+
                                 <div>
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/pa.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/ta.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/te.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
+                                    <p style="display: inline;">pa</p>
+                                    <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
+
+                                    <p style="display: inline;">ta</p>
+                                    <button class="element123" id = "../../assets/audio/son/ta.mp3">ta</button>
+
+                                    <p style="display: inline;">te</p>
+                                    <button class="element123" id = "../../assets/audio/son/te.mp3">te</button>
+
                                 </div>
                             </div>
                         </div>
                         <div>
                             <p>a l'intérieur d'un mot si il y a deux même consonnes elles se lisent comme une seule avec la voyelle qui les suit. le mot</p>
                             <div>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/comme.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                            <p style="display: inline;">comme</p>
+                            <button class="element123" id = "../../assets/audio/son/comme.mp3">comme</button>
                                 <p>. On le lit</p>
                                 <div>
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/co.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/me.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
+                                    <p style="display: inline;">co</p>
+                                    <button class="element123" id = "../../assets/audio/son/co.mp3">co</button>
+
+                                    <p style="display: inline;">me</p>
+                                    <button class="element123" id = "../../assets/audio/son/me.mp3">me</button>
+
                                 </div>
                             </div>
                             <p>ou le mot</p>
                             <div>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/commerce.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                                <p style="display: inline;">commerce</p>
+                                <button class="element123" id = "../../assets/audio/son/commerce.mp3">commerce</button>
+
                             </div>
                         </div>
                     </div>
@@ -497,17 +419,14 @@ const LESSON_DATA = [
                         </div>
                         <div>
                             <p>To read and said properly french you have to identify syllabes. The way to do it is as follow: Vowels can always been said alone and thus made a syllabe by itself. The verbe avoir dans</p>
-                            <audio controls>
-                                <source src="../../assets/audio/son/o.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio><br />
+                            <p style="display: inline;">o</p>
+                            <button class="element123" id = "../../assets/audio/son/o.mp3">o</button>
+
                             <p>range</p>
                             <div>
                                 <p>li</p>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                                <p style="display: inline;">a</p>
+                                <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                                 <p>un chien.</p>
                             </div>
                             <p>, if the word start with a vowel it is said alone as in</p>
@@ -518,39 +437,28 @@ const LESSON_DATA = [
                         <div>
                             <p>within a word if there are 2 similar consonnes....</p>
                             <div>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/comme.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                            <p style="display: inline;">coome</p>
+                            <button class="element123" id = "../../assets/audio/son/comme.mp3">coome</button>
                                 <div>
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/co.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/me.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
+                                    <p style="display: inline;">co</p>
+                                    <button  class="element123" id = "../../assets/audio/son/co.mp3">co</button>
+                                    <p style="display: inline;">me</p>
+                                    <button  class="element123" id = "../../assets/audio/son/me.mp3">me</button>
+
                                 </div>
                             </div>
                             <div>
-                                <audio controls>
-                                    <source src="../../assets/audio/son/commerce.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio><br />
+                            <p style="display: inline;">commerce</p>
+                            <button class="element123" id = "../../assets/audio/son/commerce.mp3">commerce</button>
+
                                 <div>
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/co.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/mer.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
-                                    <audio controls>
-                                        <source src="../../assets/audio/son/ce.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio><br />
+                                    <p style="display: inline;">co</p>
+                                    <button class="element123" id = "../../assets/audio/son/co.mp3">co</button>
+
+                                    <p style="display: inline;">mer</p>
+                                    <button class="element123" id = "../../assets/audio/son/mer.mp3">mer</button>
+                                    <p style="display: inline;">ce</p>
+                                    <button class="element123" id = "../../assets/audio/son/ce.mp3">ce</button>
                                 </div>
                             </div>
                         </div>
@@ -570,30 +478,29 @@ const LESSON_DATA = [
                     <div>
                         <h2>Page 1</h2>
                         <h3 className="something"> la lettre A </h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
                     </div>
                 `,
@@ -601,30 +508,29 @@ const LESSON_DATA = [
                      <div>
                         <h2>Page 1</h2>
                         <h3 className="something">letter A</h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> During the battle, my dad and the admiral are safe from attack. </p>
                     </div>
                 `
@@ -642,30 +548,29 @@ const LESSON_DATA = [
                     <div>
                         <h2>Page 1</h2>
                         <h3 className="something"> la lettre A </h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
                     </div>
                 `,
@@ -673,30 +578,29 @@ const LESSON_DATA = [
                      <div>
                         <h2>Page 1</h2>
                         <h3 className="something">letter A</h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> During the battle, my dad and the admiral are safe from attack. </p>
                     </div>
                 `
@@ -714,30 +618,29 @@ const LESSON_DATA = [
                     <div>
                         <h2>Page 1</h2>
                         <h3 className="something"> la lettre A </h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
                     </div>
                 `,
@@ -745,30 +648,29 @@ const LESSON_DATA = [
                      <div>
                         <h2>Page 1</h2>
                         <h3 className="something">letter A</h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> During the battle, my dad and the admiral are safe from attack. </p>
                     </div>
                 `
@@ -786,30 +688,28 @@ const LESSON_DATA = [
                     <div>
                         <h2>Page 1</h2>
                         <h3 className="something"> la lettre A </h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
                         <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
                     </div>
                 `,
@@ -817,30 +717,28 @@ const LESSON_DATA = [
                      <div>
                         <h2>Page 1</h2>
                         <h3 className="something">letter A</h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                       <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
                         <p> During the battle, my dad and the admiral are safe from attack. </p>
                     </div>
                 `
@@ -858,30 +756,29 @@ const LESSON_DATA = [
                     <div>
                         <h2>Page 1</h2>
                         <h3 className="something"> la lettre A </h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
                     </div>
                 `,
@@ -889,30 +786,29 @@ const LESSON_DATA = [
                      <div>
                         <h2>Page 1</h2>
                         <h3 className="something">letter A</h3>
-                        <audio controls>
-                            <source src="../../assets/audio/son/a.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/papa.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/amiral.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/bataille.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/attaque.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
-                        <audio controls>
-                            <source src="../../assets/audio/son/abri.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio><br />
+                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
+                        </br>
+
+                        <p style="display: inline;">papa</p>
+                        <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
+                        </br>
+
+                        <p style="display: inline;">amiral</p>
+                        <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
+                        </br>
+
+                        <p style="display: inline;">bataille</p>
+                        <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
+                        </br>
+
+                        <p style="display: inline;">attaque</p>
+                        <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
+                        </br>
+
+                        <p style="display: inline;">abri</p>
+                        <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
+
                         <p> During the battle, my dad and the admiral are safe from attack. </p>
                     </div>
                 `
