@@ -283,11 +283,11 @@ const LESSON_DATA = [
 
                             <p>et on ne chante pas. On essaye pas d'accentuer les sons même si votre oreille entend un quelque chose qui ressemble à une accentuation. Il vous faut lire syllabe après syllabe et ne pas chercher à faire autre chose. En français il n'y a pas de</p>
 
-                            <p style="display: inline;">aaa</p>
+                            <!--<p style="display: inline;">aaa</p>-->
                             <button class="element123" id = "../../assets/audio/son/aaa.mp3">aaa</button>
 
                             <p>ou de</p>
-                            <p style="display: inline;">ououwa</p>
+                            <!--<p style="display: inline;">ououwa</p>-->
                             <button class="element123" id = "../../assets/audio/son/ouwa.mp3">ououwa</button>
 
                             <div>
@@ -310,15 +310,15 @@ const LESSON_DATA = [
                         </div>
                         <div>
                             <p>Lets take the word papa that must be read</p>
-                            <p style="display: inline;">pa</p>
+                            <!--<p style="display: inline;">pa</p>-->
                             <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
 
                             <p>and</p>
-                            <p style="display: inline;">pa</p>
+                            <!--<p style="display: inline;">pa</p>-->
                             <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
 
                             <p>as the group of letters made only one sound and it is saied in one breath. The word TATA have to be read</p>
-                            <p style="display: inline;">ta ta</p>
+                            <!--<p style="display: inline;">ta ta</p>-->
                             <button class="element123" id = "../../assets/audio/son/ta_ta.mp3">ta ta</button>
                             <p>and we must not sing.</p>
                         </div>
@@ -333,22 +333,22 @@ const LESSON_DATA = [
                         <h3>Régles</h3>
                         <div>
                             <p>la syllabe: une syllabe est un son identifiable qui se dit en un soufle en un seul son sans nuance. Par exemple en anglais le mot</p>
-                            <p style="display: inline;">two</p>
+
                             <button class="element123" id = "../../assets/audio/son/english/two.mp3">two</button>
 
                             <p>se lit presque en un seul soufle, un seul son. Alors que le mot</p>
-                            <p style="display: inline;">quiet</p>
+
                             <button class="element123" id = "../../assets/audio/son/english/quiet.mp3">quiet</button>
 
                             <p>il y a 3 syllabes</p>
                             <div>
-                               <p style="display: inline;">qui</p>
+
                                <button  class="element123" id = "../../assets/audio/son/koi.mp3">qui</button>
 
-                               <p style="display: inline;">i</p>
+
                                <button class="element123" id = "../../assets/audio/son/i.mp3">i</button>
 
-                               <p style="display: inline;">ete</p>
+
                                <button class="element123" id = "../../assets/audio/son/ete.mp3">ete</button>
                             </div>
                         </div>
@@ -356,13 +356,13 @@ const LESSON_DATA = [
                             <p>Pour lire et dire correctement le français il faut identifier les syllabes et voici comment les reconnaître. Les voyelles sont toujours prononçable et peuvent former un syllabe à elle seule. le verbe avoir dans,</p>
                             <div>
                                 <p>il</p>
-                                <p style="display: inline;">a</p>
+
                                 <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
 
                                 <p>un chien.</p>
                             </div>
                             <p>Si le mot commence par une voyelle elle se dit seule comme dans</p>
-                            <p style="display: inline;">o</p>
+
                             <button class="element123" id = "../../assets/audio/son/o.mp3">o</button>
 
                             <p>range.</p>
@@ -374,13 +374,13 @@ const LESSON_DATA = [
                             <button class="element123" id = "../../assets/audio/son/patate.mp3"></button>
 
                                 <div>
-                                    <p style="display: inline;">pa</p>
+
                                     <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
 
-                                    <p style="display: inline;">ta</p>
+
                                     <button class="element123" id = "../../assets/audio/son/ta.mp3">ta</button>
 
-                                    <p style="display: inline;">te</p>
+
                                     <button class="element123" id = "../../assets/audio/son/te.mp3">te</button>
 
                                 </div>
@@ -393,17 +393,17 @@ const LESSON_DATA = [
                             <button class="element123" id = "../../assets/audio/son/comme.mp3">comme</button>
                                 <p>. On le lit</p>
                                 <div>
-                                    <p style="display: inline;">co</p>
+
                                     <button class="element123" id = "../../assets/audio/son/co.mp3">co</button>
 
-                                    <p style="display: inline;">me</p>
+
                                     <button class="element123" id = "../../assets/audio/son/me.mp3">me</button>
 
                                 </div>
                             </div>
                             <p>ou le mot</p>
                             <div>
-                                <p style="display: inline;">commerce</p>
+
                                 <button class="element123" id = "../../assets/audio/son/commerce.mp3">commerce</button>
 
                             </div>
@@ -419,13 +419,13 @@ const LESSON_DATA = [
                         </div>
                         <div>
                             <p>To read and said properly french you have to identify syllabes. The way to do it is as follow: Vowels can always been said alone and thus made a syllabe by itself. The verbe avoir dans</p>
-                            <p style="display: inline;">o</p>
+                            <!--<p style="display: inline;">o</p>-->
                             <button class="element123" id = "../../assets/audio/son/o.mp3">o</button>
 
                             <p>range</p>
                             <div>
                                 <p>li</p>
-                                <p style="display: inline;">a</p>
+
                                 <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                                 <p>un chien.</p>
                             </div>
@@ -437,27 +437,27 @@ const LESSON_DATA = [
                         <div>
                             <p>within a word if there are 2 similar consonnes....</p>
                             <div>
-                            <p style="display: inline;">coome</p>
+
                             <button class="element123" id = "../../assets/audio/son/comme.mp3">coome</button>
                                 <div>
-                                    <p style="display: inline;">co</p>
+
                                     <button  class="element123" id = "../../assets/audio/son/co.mp3">co</button>
-                                    <p style="display: inline;">me</p>
+
                                     <button  class="element123" id = "../../assets/audio/son/me.mp3">me</button>
 
                                 </div>
                             </div>
                             <div>
-                            <p style="display: inline;">commerce</p>
+
                             <button class="element123" id = "../../assets/audio/son/commerce.mp3">commerce</button>
 
                                 <div>
-                                    <p style="display: inline;">co</p>
+
                                     <button class="element123" id = "../../assets/audio/son/co.mp3">co</button>
 
-                                    <p style="display: inline;">mer</p>
+
                                     <button class="element123" id = "../../assets/audio/son/mer.mp3">mer</button>
-                                    <p style="display: inline;">ce</p>
+
                                     <button class="element123" id = "../../assets/audio/son/ce.mp3">ce</button>
                                 </div>
                             </div>
@@ -477,61 +477,61 @@ const LESSON_DATA = [
                 html: `
                     <div>
                         <h2>Page 1</h2>
-                        <h3 className="something"> la lettre A </h3>
-                        <p style="display: inline;">a</p>
+                        <h3><button class="element123" id = "all"> la lettre A </button></h3>
+                        <!--<p style="display: inline;">a</p>-->
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                        <br /><br /><button> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </button>
                     </div>
                 `,
                 foreignHtml: `
                      <div>
                         <h2>Page 1</h2>
-                        <h3 className="something">letter A</h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all">letter A</button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                        <br /><br /><button> During the battle, my dad and the admiral are safe from attack. </button>
                     </div>
                 `
             },
@@ -547,61 +547,61 @@ const LESSON_DATA = [
                 html: `
                     <div>
                         <h2>Page 1</h2>
-                        <h3 className="something"> la lettre A </h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all">la lettre A </button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                        <br /><br /><button> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </button>
                     </div>
                 `,
                 foreignHtml: `
                      <div>
                         <h2>Page 1</h2>
-                        <h3 className="something">letter A</h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all">letter A</button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                        <br /><br /><button> During the battle, my dad and the admiral are safe from attack. </button>
                     </div>
                 `
             },
@@ -617,61 +617,61 @@ const LESSON_DATA = [
                 html: `
                     <div>
                         <h2>Page 1</h2>
-                        <h3 className="something"> la lettre A </h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all"> la lettre A </button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                        <br /><br /><button> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </button>
                     </div>
                 `,
                 foreignHtml: `
                      <div>
                         <h2>Page 1</h2>
-                        <h3 className="something">letter A</h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all">letter A</button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                        <br /><br /><button> During the battle, my dad and the admiral are safe from attack. </button>
                     </div>
                 `
             },
@@ -687,59 +687,59 @@ const LESSON_DATA = [
                 html: `
                     <div>
                         <h2>Page 1</h2>
-                        <h3 className="something"> la lettre A </h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all">la lettre A </button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
-                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                        <br /><br /><button> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </button>
                     </div>
                 `,
                 foreignHtml: `
                      <div>
                         <h2>Page 1</h2>
-                        <h3 className="something">letter A</h3>
-                       <p style="display: inline;">a</p>
+                        <button class="element123" id = "all">letter A</button>
+                       <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
-                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                        <br /><br /><button> During the battle, my dad and the admiral are safe from attack. </button>
                     </div>
                 `
             },
@@ -755,61 +755,61 @@ const LESSON_DATA = [
                 html: `
                     <div>
                         <h2>Page 1</h2>
-                        <h3 className="something"> la lettre A </h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all"> la lettre A </button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </p>
+                        <br /><br /><button> Pendant la bataille, mon papa et l'amiral sont à l'abri de l'attaque. </button>
                     </div>
                 `,
                 foreignHtml: `
                      <div>
                         <h2>Page 1</h2>
-                        <h3 className="something">letter A</h3>
-                        <p style="display: inline;">a</p>
+                        <button class="element123" id = "all">letter A</button>
+                        <!--<p style="display: inline;">a</p>--><br /><br />
                         <button class="element123" id = "../../assets/audio/son/a.mp3">a</button>
                         </br>
 
-                        <p style="display: inline;">papa</p>
+                        <!--<p style="display: inline;">papa</p>-->
                         <button class="element123" id = "../../assets/audio/son/papa.mp3">papa</button>
                         </br>
 
-                        <p style="display: inline;">amiral</p>
+                        <!--<p style="display: inline;">amiral</p>-->
                         <button class="element123" id = "../../assets/audio/son/amiral.mp3">amiral</button>
                         </br>
 
-                        <p style="display: inline;">bataille</p>
+                        <!--<p style="display: inline;">bataille</p>-->
                         <button class="element123" id = "../../assets/audio/son/bataille.mp3">bataille</button>
                         </br>
 
-                        <p style="display: inline;">attaque</p>
+                        <!--<p style="display: inline;">attaque</p>-->
                         <button class="element123" id = "../../assets/audio/son/attaque.mp3">attaque</button>
                         </br>
 
-                        <p style="display: inline;">abri</p>
+                        <!--<p style="display: inline;">abri</p>-->
                         <button class="element123" id = "../../assets/audio/son/abri.mp3">abri</button>
 
-                        <p> During the battle, my dad and the admiral are safe from attack. </p>
+                        <br /><br /><button> During the battle, my dad and the admiral are safe from attack. </button>
                     </div>
                 `
             },

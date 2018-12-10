@@ -59,8 +59,18 @@ class Lesson extends Component {
                     console.log(target)
                     for(let i = 0; i< target.length; i++){
                         target[i].addEventListener('click', ()=>{
-                            var aAudio = new Audio(target[i].id);
-                            aAudio.play();
+                            if(target[i].id == 'all'){
+                                var id = ['../../assets/audio/son/a.mp3','../../assets/audio/son/amiral.mp3', '../../assets/audio/son/bataille.mp3', '../../assets/audio/son/attaque.mp3', '../../assets/audio/son/abri.mp3' ]
+                                var aAudio = []
+                                for(let i = 0; i< id.length; i++){
+                                    aAudio[i] = new Audio(id[i]);
+                                    setTimeout(function(){ aAudio[i].play();; }, i+(i)+'000');
+                                }
+                            }
+                            else{
+                                var aAudio = new Audio(target[i].id);
+                                aAudio.play();
+                            }
                         })
                     }
 
@@ -71,11 +81,21 @@ class Lesson extends Component {
             this.setState({ htmlToRendered: html, showingFrench: true }, () => {
                 const target = document.getElementsByClassName('element123');
                 if(target){
-                    console.log(target)
                     for(let i = 0; i< target.length; i++){
                         target[i].addEventListener('click', ()=>{
-                            var aAudio = new Audio(target[i].id);
-                            aAudio.play();
+                            if(target[i].id == 'all'){
+                                var id = ['../../assets/audio/son/a.mp3','../../assets/audio/son/amiral.mp3', '../../assets/audio/son/bataille.mp3', '../../assets/audio/son/attaque.mp3', '../../assets/audio/son/abri.mp3' ]
+                                var aAudio = []
+                                for(let i = 0; i< id.length; i++){
+                                    aAudio[i] = new Audio(id[i]);
+                                    setTimeout(function(){ aAudio[i].play();; }, i+(i)+'000');
+                                }
+                            }
+                            else{
+                                var aAudio = new Audio(target[i].id);
+                                aAudio.play();
+                            }
+
                         })
                     }
 
@@ -108,8 +128,18 @@ class Lesson extends Component {
                         console.log(target)
                         for(let i = 0; i< target.length; i++){
                             target[i].addEventListener('click', ()=>{
-                                var aAudio = new Audio(target[i].id);
-                                aAudio.play();
+                                if(target[i].id == 'all'){
+                                    var id = ['../../assets/audio/son/a.mp3','../../assets/audio/son/amiral.mp3', '../../assets/audio/son/bataille.mp3', '../../assets/audio/son/attaque.mp3', '../../assets/audio/son/abri.mp3' ]
+                                    var aAudio = []
+                                    for(let i = 0; i< id.length; i++){
+                                        aAudio[i] = new Audio(id[i]);
+                                        setTimeout(function(){ aAudio[i].play();; }, i+(i)+'000');
+                                    }
+                                }
+                                else{
+                                    var aAudio = new Audio(target[i].id);
+                                    aAudio.play();
+                                }
                             })
                         }
 
@@ -138,10 +168,8 @@ class Lesson extends Component {
             },() => {
                 const target = document.getElementsByClassName('element123');
                 if(target){
-                    console.log(target)
                     for(let i = 0; i< target.length; i++){
                         target[i].addEventListener('click', ()=>{
-                            console.log(target[i].src,'imageeeeeeeeeeeeeee')
                             var aAudio = new Audio(target[i].id);
                             aAudio.play();
                         })
@@ -182,8 +210,18 @@ class Lesson extends Component {
                         console.log(target)
                         for(let i = 0; i< target.length; i++){
                             target[i].addEventListener('click', ()=>{
-                                var aAudio = new Audio(target[i].id);
-                                aAudio.play();
+                                if(target[i].id == 'all'){
+                                    var id = ['../../assets/audio/son/a.mp3','../../assets/audio/son/amiral.mp3', '../../assets/audio/son/bataille.mp3', '../../assets/audio/son/attaque.mp3', '../../assets/audio/son/abri.mp3' ]
+                                    var aAudio = []
+                                    for(let i = 0; i< id.length; i++){
+                                        aAudio[i] = new Audio(id[i]);
+                                        setTimeout(function(){ aAudio[i].play();; }, i+(i)+'000');
+                                    }
+                                }
+                                else{
+                                    var aAudio = new Audio(target[i].id);
+                                    aAudio.play();
+                                }
                             })
                         }
 
@@ -264,7 +302,6 @@ class Lesson extends Component {
                                             return(
                                                 <div dangerouslySetInnerHTML={{ __html: htmlToRendered }} style = {{width: "80%", marginLeft: "10%"}}/>
                                             )
-                                            console.log(page,'ooooooooooooooooooooooooooooooooooo')
                                         })
                                     )
                                 })}
