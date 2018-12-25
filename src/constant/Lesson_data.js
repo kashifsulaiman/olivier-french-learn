@@ -1,6 +1,5 @@
 
 
-
 const LESSON_DATA = [
     {
         id: 1,
@@ -249,7 +248,7 @@ const LESSON_DATA = [
                     <h2>Page 1</h2>
                     <div>
                         <p>consonne:the word consonne is made with con (with) and with sonne (ring)</p>
-                        <button class="element123" id = "../../assets/audio/son/souris.mp3">souris</button>
+                        <button class="element123" id = "../../assets/audio/son/souris.mp3" style={{display: 'inline'}}>souris</button>
 
                         <p>mais encore un fois ne vous préoccupez pas de tout cela car nous allons voir toutes ces choses graduellement dans ce course. Vous devez simplement le garder en en tête.</p>
                         <button class="element123" id = "../../assets/audio/son/elephant.mp3">elephant</button>
@@ -266,16 +265,17 @@ const LESSON_DATA = [
                         <div>
                             <p>Seul les voyelles peuvent être vocalisées et donc une consonne ne peut l'être qu'avec une voyelle. Chaque mot est décomposée en syllabe que l'on dit séparément une à une. une syllabe est un son vocalisé en une fois en un soufle et elle est transcrite par une ou plusieurs lettres. Il y a bien sûr des exceptions, autrement le français ne serait pas le français. Mais vous devez vous impréniez des règles générales et ensuite les particularités seront aisées à retenir et à comprendre. Et nous les verrons mais seulement après avoir assimiler la règle générale. Des exemples dans ce cas valent mieux qu'une longue page.</p>
                         </div>
-                        <div>
+                        <div sytle={styling}>
+
                             <p>prenons des mots papa qui doit être lu</p>
+                            <div >
+
+                               <button  id = "../../assets/audio/son/pa.mp3" >pa</button>
+                            <span>et</span>
 
 
-                            <button  class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
-                            <p>et</p>
-
-
-                            <button class="element123" id = "../../assets/audio/son/pa.mp3">pa</button>
-
+                            <button class="element123" id="../../assets/audio/son/pa.mp3" >pa</button>
+                </div>
                             <p>comme si le groupe de lettre ne faisait qu'un seul son qui se dit en un seul soufle. Le mot TATA doit être lu</p>
 
 
@@ -286,7 +286,7 @@ const LESSON_DATA = [
                             <!--<p style="display: inline;">aaa</p>-->
                             <button class="element123" id = "../../assets/audio/son/aaa.mp3">aaa</button>
 
-                            <p>ou de</p>
+                            <span>ou de</span>
                             <!--<p style="display: inline;">ououwa</p>-->
                             <button class="element123" id = "../../assets/audio/son/ouwa.mp3">ououwa</button>
 
@@ -816,5 +816,9 @@ const LESSON_DATA = [
         ]
     },
 ]
+
+const styling = {
+    display: 'inline !important',
+};
 
 export default LESSON_DATA
